@@ -1,0 +1,33 @@
+public class swappingno {
+    public static void main(String[] args) {
+        int a=10,b=20;
+        int temp;
+        System.out.println("before swapping : "+a+" and "+b);
+        temp=a;
+        a=b;
+        b=temp;
+        System.out.println("After swapping : "+a+" and "+b);
+        // single statement logic
+        b=a+b-(a=b);
+        System.out.println("After swapping : "+a+" and "+b);
+        //xor gate^
+        a=a^b;
+        b=a^b;
+        a=a^b;
+        System.out.println("After swapping : "+a+" and "+b);
+        //   *and  / without third variable
+        a=a*b;
+        b=a/b;
+        a=a/b;
+        System.out.println("After swapping : "+a+" and "+b);
+        // logic 
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        System.out.println("After swapping : "+a+" and "+b);
+
+
+
+    }
+    
+}
